@@ -20,7 +20,7 @@
 // @include foundation-callout;
 // @include foundation-card;
 // @include foundation-close-button;
-// @include foundation-menu;
+@include foundation-menu;
 // @include foundation-menu-icon;
 // @include foundation-drilldown-menu;
 // @include foundation-dropdown;
@@ -54,4 +54,12 @@
 // @include motion-ui-transitions;
 // @include motion-ui-animations;
 
-@import 'includes/_layout';
+@import '../../node_modules/owl.carousel/src/scss/owl.carousel';
+@import 'includes/owl';
+
+@import 'includes/layout';
+@import 'includes/menu';
+@import 'includes/head';
+@import 'includes/slider';
+@import 'includes/map';
+@import 'includes/footer';

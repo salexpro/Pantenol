@@ -1,0 +1,15 @@
+.footer{
+    background-color: $secondary-color;
+    color: $white;
+    padding: 40px 73px;
+    p:last-child{
+        margin: 0;
+    }
+    a{
+        color: $white;
+        text-decoration: underline;
+        &:hover{
+            text-decoration: none;
+        }
+    }
+}
