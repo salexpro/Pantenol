@@ -6,10 +6,10 @@
     &_part{
         height: 480px;
         display: flex;
-        &--top{
+        &--right{
             flex-direction: row-reverse;
         }
-        &--bottom{
+        &--left{
             .slider{
                 &_img{
                     margin: 0 0 0 -28px;
@@ -47,18 +47,18 @@
             position: absolute;
             top: calc(50% - 28px);
             right: 0;
-            border: 14px solid $primary-color;
+            border: 14px solid $blue-color;
             border-bottom-color: transparent;
             border-left-color: transparent;
-            box-shadow: 92px -120px 0 92px $primary-color;
+            box-shadow: 92px -120px 0 92px $blue-color;
         }
         &::after{
             @extend .slider_img::before;
             top: auto;
             bottom: calc(50% - 28px);
-            border-bottom-color: $primary-color;
+            border-bottom-color: $blue-color;
             border-top-color: transparent;
-            box-shadow: 92px 120px 0 92px $primary-color;
+            box-shadow: 92px 120px 0 92px $blue-color;
         }
         img{
             height: 100%;
@@ -71,7 +71,7 @@
     }
     &_content{
         flex: 1 1 100%;
-        background: $primary-color;
+        background: $blue-color;
         padding: 50px 86px;
         display: flex;
         flex-direction: column;
@@ -84,6 +84,6 @@
         text-align: justify;
     }
     .button{
-        margin: auto 0 0 0;
+        margin-top: auto;
     }
 }

@@ -1,4 +1,9 @@
 .owl{
+    &-nav{
+        .disabled {
+            opacity: .6;
+        }
+    }
     &-prev{
         position: absolute;
         top: calc(50% - 27px);
@@ -8,6 +13,7 @@
         background-image: url(../img/arr.svg);
         background-size: 55px;
         border-radius: 50%;
+        transition: 300ms;
     }
     &-next{
         @extend .owl-prev;

@@ -3,6 +3,12 @@
     background-color: $primary-color;
     li{
         border-bottom: 2px solid $white;
+        &:hover,
+        &.active {
+            a{
+                background: #436baa;
+            }
+        }
         &.logo {
             a{
                 height: 105px;
@@ -34,9 +40,6 @@
         font-weight: 300;
         font-size: 20px;
         transition: 300ms;
-        &:hover, &.active{
-            background: #436baa;
-        }
     }
     img{
         width: 65px;

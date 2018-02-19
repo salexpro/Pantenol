@@ -1,3 +1,4 @@
+block vars
 doctype html
 html(lang="ru")
     include includes/_head
@@ -6,9 +7,7 @@ html(lang="ru")
             include includes/_menu
             main.content
                 include includes/_header
-                block vars
-                block content
-                    include includes/_slider
-                    include includes/_map
+                include includes/_slider
+                include includes/_map
                 include includes/_footer
         include includes/_offcanvas

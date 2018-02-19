@@ -8,7 +8,7 @@
 
 $(document).foundation();
 
-$('.slider_inner').owlCarousel({
+$('.owl-carousel').owlCarousel({
     items: 1,
     nav: true,
     navText: ['', '']
