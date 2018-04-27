@@ -1,0 +1,42 @@
+section.slider
+    .slider_top
+        .logo
+            img(src="./img/logo.svg", alt="EGIS")
+        h1.slider_header
+            | Д-Пантенол
+        .slider_slogan
+            | Эксперт в заживлении кожи
+    .orbit(data-orbit data-use-m-u-i="false")
+        .orbit-wrapper
+            ul.orbit-container
+                li.orbit-slide.is-active.orbit-slide--family
+                    .row.slider_title
+                        | Семья и
+                        br
+                        | материнство
+                li.orbit-slide.orbit-slide--care
+                    .row.slider_title
+                        | Косметический 
+                        br
+                        | уход за собой
+                li.orbit-slide.orbit-slide--burn
+                    .row.slider_title
+                        | Ожоги
+                li.orbit-slide.orbit-slide--tattoo
+                    .row.slider_title
+                        | Уход
+                        br
+                        | за татуировкой
+                li.orbit-slide.orbit-slide--leisure
+                    .row.slider_title
+                        | Активный
+                        br
+                        | отдых
+        nav.orbit-bullets
+            button.is-active(data-slide='0')
+            button(data-slide='1')
+            button(data-slide='2')
+            button(data-slide='3')
+            button(data-slide='4')
+    .slider_kv
+        img(src='./img/kv.png', alt='Д-Пантенол')

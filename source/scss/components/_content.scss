@@ -1,0 +1,87 @@
+.content{
+    display: flex;
+    height: 1050px;
+    &_part{
+        width: 50%;
+        position: relative;
+        &--left{
+            .content_block{
+                right: 0;
+                float: right;
+                &.is-stuck{
+                    left: calc(50% - 480px);
+                }
+            }
+            .owl-nav{
+                left: 100%;
+            }
+        }
+        &--right{
+           .owl-nav {
+               right: 100%;
+           }
+        }
+        &--green{
+            background-size: cover;
+            .content_block {
+                background-color: $secondary-color;
+                bottom: 0;
+            }
+        }
+        &--blue{
+            .content_block{
+                background-color: $primary-color;
+                padding-right: 37px;
+                padding-bottom: 60px;
+            }
+        }
+
+        $images: family care burn tattoo leisure;
+        @each $img in $images{
+            &--#{$img}{
+                background-image: url(../img/bg/#{$img}.jpg);
+            }
+        }
+    }
+    &_block{
+        position: absolute;
+        width: 480px;
+        min-height: 470px;
+        padding: 60px 0 30px 60px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        &.is-stuck{
+            width: 480px;
+            z-index: 0;
+        }
+        &_descr{
+            font-size: 20px;
+            line-height: 1.2;
+        }
+    }
+    &_slider{
+        height: 100%;
+    }
+    &_item{
+        display: flex;
+        padding-left: 20px;
+        position: relative;
+        &_content{
+            padding-right: 10px;
+        }
+        &_img{
+            flex: 0 0 120px;
+            width: 120px;
+            height: 120px;
+            overflow: hidden;
+            border-radius: 50%;
+            box-shadow: 0 18px 39px rgba(0, 0, 0, 0.12);
+            margin-right: 30px;
+            background: $white;
+        }
+        &_descr{
+            margin-top: 10px;
+        }
+    }
+}

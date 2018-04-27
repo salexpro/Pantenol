@@ -1,0 +1,42 @@
+.map{
+    position: relative;
+    // height: 580px;
+    &_inner{
+        position: relative;
+    }
+    &_content{
+        // position: absolute;
+        // top: 0;
+        // left: 0;
+        width: 480px;
+        height: 480px;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 65px 75px 80px;
+        z-index: 2;
+        background-color: $white;
+    }
+    &_header{
+        color: $primary-color;
+    }
+    &_item{
+        width: 140px;
+        a{
+            padding: 0;
+        }
+        + .map_item{
+            margin-top: 32px;
+        }
+    }
+    &_container{
+        position: absolute;
+        width: 100%;
+        height: 100%;
+        iframe{
+            width: 100%;
+            height: 100%;
+        }
+    }
+}

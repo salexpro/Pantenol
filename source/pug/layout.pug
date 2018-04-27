@@ -1,13 +1,13 @@
 block vars
 doctype html
 html(lang="ru")
-    include includes/_head
+    include components/_head
     body
-        .off-canvas-content.wrap(data-off-canvas-content)
-            include includes/_menu
-            main.content
-                include includes/_header
-                include includes/_slider
-                include includes/_map
-                include includes/_footer
-        include includes/_offcanvas
+        main.off-canvas-content.wrap(data-off-canvas-content)
+            include components/_header
+            include components/_slider
+            include components/_content
+            include components/_video
+            include components/_map
+            //- include components/_footer
+        include components/_offcanvas
