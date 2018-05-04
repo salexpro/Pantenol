@@ -1,13 +1,13 @@
-nav.nav
-    ul.menu(data-magellan data-active-class="active")
+mixin menu(mod)
+    ul.menu(data-magellan data-active-class="active" class=mod)
         li
-            a.nav_item(href="#family")
+            a.nav_item(href="#family" data-close="")
                 span.nav_img
                     img(src="./img/menu/family.png", alt="Дети и семья")
                 span.nav_title
                     | Дети и семья
         li
-            a.nav_item(href="#care")
+            a.nav_item(href="#care" data-close="")
                 span.nav_img
                     img(src="./img/menu/care.png", alt="Косметический уход")
                 span.nav_title
@@ -19,19 +19,19 @@ nav.nav
                 span.nav_title
                     | Кожные повреждения
         li 
-            a.nav_item(href="#burn")
+            a.nav_item(href="#burn" data-close="")
                 span.nav_img
                     img(src="./img/menu/burn.png", alt="Ожоги")
                 span.nav_title
                     | Ожоги
         li 
-            a.nav_item(href="#tattoo")
+            a.nav_item(href="#tattoo" data-close="")
                 span.nav_img
                     img(src="./img/menu/tattoo.png", alt="Татуировки")
                 span.nav_title
                     | Татуировки
         li 
-            a.nav_item(href="#leisure")
+            a.nav_item(href="#leisure" data-close="")
                 span.nav_img
                     img(src="./img/menu/leisure.png", alt="Активный отдых")
                 span.nav_title
@@ -39,7 +39,7 @@ nav.nav
                     br
                     | отдых
         li
-            a.nav_item(href="#buy")
+            a.nav_item(href="#buy" data-close="")
                 span.nav_img
                     img(src="./img/menu/where.svg", alt="Где купить")
                 span.nav_title

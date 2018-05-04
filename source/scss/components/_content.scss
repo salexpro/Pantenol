@@ -1,15 +1,29 @@
 .content{
     display: flex;
     height: 1050px;
+    @include breakpoint(medium down) {
+        height: 600px;
+    }
+    @include breakpoint(small down) {
+        flex-direction: column;
+        height: auto;
+        + .content{
+            border-top: 5px solid;
+        }
+    }
     &_part{
         width: 50%;
         position: relative;
+        @include breakpoint(small down) {
+            width: 100%;
+        }
         &--left{
             .content_block{
                 right: 0;
                 float: right;
                 &.is-stuck{
-                    left: calc(50% - 480px);
+                    left: 50%;
+                    transform: translateX(-100%);
                 }
             }
             .owl-nav{
@@ -29,10 +43,16 @@
             }
         }
         &--blue{
+            @include breakpoint(small down) {
+                order: -1
+            }
             .content_block{
                 background-color: $primary-color;
                 padding-right: 37px;
                 padding-bottom: 60px;
+                @include breakpoint(medium down) {
+                    padding: 10% 6% 10%;
+                }
             }
         }
 
@@ -51,9 +71,28 @@
         display: flex;
         flex-direction: column;
         justify-content: space-between;
+        @include breakpoint(medium down) {
+            max-width: 480px !important;
+            width: 100%;
+            padding: 10% 6% 10%;
+            min-height: auto;
+            &.is-stuck {
+                padding: 5% 3% 5%;
+            }
+        }
+        @include breakpoint(small down) {
+            max-width: none !important;
+            position: static;
+        }
         &.is-stuck{
-            width: 480px;
+            width: 50%;
             z-index: 0;
+            max-width: 480px !important;
+        }
+        &_header{
+            @include breakpoint(medium down) {
+                margin-bottom: 20px;
+            }
         }
         &_descr{
             font-size: 20px;
@@ -67,8 +106,30 @@
         display: flex;
         padding-left: 20px;
         position: relative;
+        @include breakpoint(medium down) {
+            + .content_item{
+                margin-top: 20px;
+            }
+        }
+        &_outer{
+            min-height: 360px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+            padding-bottom: 30px;
+            @include breakpoint(medium down) {
+                min-height: auto;
+            }
+            @include breakpoint(small down) {
+                padding: 0;
+            }
+        }
         &_content{
             padding-right: 10px;
+            @include breakpoint(medium down) {
+                padding: 0;
+                font-size: 14px;
+            }
         }
         &_img{
             flex: 0 0 120px;
@@ -79,9 +140,18 @@
             box-shadow: 0 18px 39px rgba(0, 0, 0, 0.12);
             margin-right: 30px;
             background: $white;
+            @include breakpoint(medium down) {
+                flex: 0 0 60px;
+                width: 60px;
+                height: 60px;
+                margin-right: 10px;
+            }
         }
         &_descr{
             margin-top: 10px;
+            ul {
+                margin-bottom: 0;
+            }
         }
     }
 }

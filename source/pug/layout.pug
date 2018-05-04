@@ -1,13 +1,16 @@
+//- Components
+include components/_menu
+
 block vars
 doctype html
 html(lang="ru")
     include components/_head
     body
         main.off-canvas-content.wrap(data-off-canvas-content)
-            include components/_header
+            include components/_nav
             include components/_slider
             include components/_content
             include components/_video
             include components/_map
-            //- include components/_footer
+            //- include components/_footer 
         include components/_offcanvas

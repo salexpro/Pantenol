@@ -138,7 +138,7 @@ $header-lineheight: 1;
 $header-margin-bottom: 5px;
 $header-styles: (
   small: (
-    'h1': ('font-size': 24),
+    'h1': ('font-size': 32),
     'h2': ('font-size': 20),
     'h3': ('font-size': 19),
     'h4': ('font-size': 18),
@@ -147,12 +147,20 @@ $header-styles: (
   ),
   medium: (
     'h1': ('font-size': 65),
-    'h2': ('font-size': 50),
-    'h3': ('font-size': 24),
+    'h2': ('font-size': 38),
+    'h3': ('font-size': 22),
     'h4': ('font-size': 25),
     'h5': ('font-size': 20),
     'h6': ('font-size': 16),
   ),
+  large: (
+    'h1': ('font-size': 65),
+    'h2': ('font-size': 45),
+    'h3': ('font-size': 24),
+    'h4': ('font-size': 25),
+    'h5': ('font-size': 20),
+    'h6': ('font-size': 16),
+  )
 );
 $header-text-rendering: optimizeLegibility;
 $small-font-size: 80%;
@@ -339,18 +347,18 @@ $card-margin-bottom: $global-margin;
 $closebutton-position: right top;
 $closebutton-offset-horizontal: (
   small: 0.66rem,
-  medium: 1rem,
+  medium: 32px,
 );
 $closebutton-offset-vertical: (
   small: 0.33em,
-  medium: 0.5rem,
+  medium: 28px,
 );
 $closebutton-size: (
   small: 1.5em,
-  medium: 2em,
+  medium: 30px,
 );
 $closebutton-lineheight: 1;
-$closebutton-color: $dark-gray;
+$closebutton-color: $white;
 $closebutton-color-hover: $black;
 
 // 16. Drilldown
@@ -491,9 +499,9 @@ $meter-fill-bad: $alert-color;
 // 25. Off-canvas
 // --------------
 
-$offcanvas-size: 250px;
-$offcanvas-vertical-size: 250px;
-$offcanvas-background: $light-gray;
+$offcanvas-sizes: ( small: 250px, );
+$offcanvas-vertical-sizes: ( small: 200px, );
+$offcanvas-background: $secondary-color;
 $offcanvas-shadow: 0 0 10px rgba($black, 0.7);
 $offcanvas-inner-shadow-size: 20px;
 $offcanvas-inner-shadow-color: rgba($black, 0.25);

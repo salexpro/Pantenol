@@ -220,6 +220,16 @@
 		"sC": 3,
 		"tS": 1
 		},
+	"\/node_modules\/foundation-sites\/dist\/js\/plugins\/foundation.offcanvas.min.js": {
+		"ft": 64,
+		"ma": 1,
+		"mi": 1,
+		"oA": 1,
+		"oAP": "\/build\/node_modules\/foundation-sites\/dist\/js\/plugins\/foundation.offcanvas.min.min.js",
+		"oF": 0,
+		"sC": 3,
+		"tS": 1
+		},
 	"\/node_modules\/foundation-sites\/dist\/js\/plugins\/foundation.orbit.min.js": {
 		"ft": 64,
 		"ma": 1,
@@ -2150,8 +2160,8 @@
 		"oAP": "\/build\/img\/logo.svg",
 		"oF": 0,
 		"opt": 1,
-		"plM": 1653025529855,
-		"prP": 1
+		"plM": 1653562400767,
+		"prP": 0
 		},
 	"\/source\/img\/map\/apteka.png": {
 		"ft": 32768,
@@ -2261,6 +2271,17 @@
 		"plM": 1653025529855,
 		"prP": 1
 		},
+	"\/source\/img\/slides\/burn.jpg": {
+		"ft": 16384,
+		"iS": 429411,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/build\/img\/slides\/burn.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
 	"\/source\/img\/slides\/care.jpg": {
 		"ft": 16384,
 		"iS": 421377,
@@ -2278,6 +2299,28 @@
 		"jF": 0,
 		"oA": 0,
 		"oAP": "\/build\/img\/slides\/family.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/source\/img\/slides\/leisure.jpg": {
+		"ft": 16384,
+		"iS": 706431,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/build\/img\/slides\/leisure.jpg",
+		"oF": 0,
+		"oIPL": 0,
+		"opt": 1,
+		"q": 100
+		},
+	"\/source\/img\/slides\/tattoo.jpg": {
+		"ft": 16384,
+		"iS": 509412,
+		"jF": 0,
+		"oA": 0,
+		"oAP": "\/build\/img\/slides\/tattoo.jpg",
 		"oF": 0,
 		"oIPL": 0,
 		"opt": 1,
@@ -2331,21 +2374,30 @@
 		"oF": 0,
 		"oS": 1
 		},
-	"\/source\/pug\/components\/_header.pug": {
-		"cB": 1,
-		"cOD": 1,
-		"ft": 512,
-		"oA": 1,
-		"oAP": "\/build\/_header.html",
-		"oF": 0,
-		"oS": 1
-		},
 	"\/source\/pug\/components\/_map.pug": {
 		"cB": 1,
 		"cOD": 1,
 		"ft": 512,
 		"oA": 1,
 		"oAP": "\/build\/_map.html",
+		"oF": 0,
+		"oS": 1
+		},
+	"\/source\/pug\/components\/_menu.pug": {
+		"cB": 1,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_menu.html",
+		"oF": 0,
+		"oS": 1
+		},
+	"\/source\/pug\/components\/_nav.pug": {
+		"cB": 1,
+		"cOD": 1,
+		"ft": 512,
+		"oA": 1,
+		"oAP": "\/build\/_nav.html",
 		"oF": 0,
 		"oS": 1
 		},
@@ -2559,7 +2611,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "\/source\/apple-touch-icon.png",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 546529301
+	"lastBuiltDate": 546797376
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,

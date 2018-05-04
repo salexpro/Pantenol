@@ -3,16 +3,16 @@
         margin-left: -20px;
         // padding-bottom: 45px;
         margin-right: 40px;
+        @include breakpoint(medium down) {
+            margin-right: 5px;
+            margin-left: -6%;
+        }
     }
     &-carousel{
         position: static;
     }
     &-item.owl-item{
-        min-height: 360px;
-        display: flex;
-        flex-direction: column;
-        justify-content: space-between;
-        padding-bottom: 20px;
+        
     }
     &-nav{
         position: absolute;

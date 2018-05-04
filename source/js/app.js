@@ -13,6 +13,7 @@
 @codekit-prepend quiet '../../node_modules/foundation-sites/dist/js/plugins/foundation.magellan.min';
 @codekit-prepend quiet '../../node_modules/foundation-sites/dist/js/plugins/foundation.orbit.min';
 @codekit-prepend quiet '../../node_modules/foundation-sites/dist/js/plugins/foundation.sticky.min';
+@codekit-prepend quiet '../../node_modules/foundation-sites/dist/js/plugins/foundation.offcanvas.min';
 @codekit-prepend quiet '../../node_modules/owl.carousel/dist/owl.carousel.min';
 */
 

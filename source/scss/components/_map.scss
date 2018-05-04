@@ -17,9 +17,17 @@
         padding: 65px 75px 80px;
         z-index: 2;
         background-color: $white;
+        @include breakpoint(small down) {
+            padding: 30px;
+            height: auto;
+            width: 100%;
+        }
     }
     &_header{
         color: $primary-color;
+        @include breakpoint(small down) {
+            margin-bottom: 20px;
+        }
     }
     &_item{
         width: 140px;

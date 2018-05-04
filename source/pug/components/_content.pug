@@ -13,14 +13,14 @@ mixin item(img, title, descr)
                 else
                     =descr
 
-section.content(data-magellan-target="family")
-    #family.content_part.content_part--family.content_part--left.content_part--green
+section#family.content(data-magellan-target="family")
+    .content_part.content_part--family.content_part--left.content_part--green
         .content_block
             .owl-carousel.content_slider
-                .owl-item
+                .content_item_outer
                     +item('dryness', 'Сухость', 'На 2-3 день жизни кожа малыша становится сухой, чаще всего шелушится кожа ладошек и пяточек')
                     +item('pimples', 'Прыщики', 'Могут высыпать красные воспалённые прыщики')
-                .owl-item
+                .content_item_outer
                     +item('intertrigo', 'Опрелости', 'У малышей постарше могут возникать воспаления участков кожи')
                     +item('subcooling', 'Переохлаждение', 'На коже малыша появляется «мраморный» рисунок.')
     .content_part.content_part--right.content_part--blue(data-sticky-container)
@@ -30,33 +30,33 @@ section.content(data-magellan-target="family")
             .content_block_descr
                 | Новорожденные — самые нежные цветы жизни. С легкостью избегаем недетских проблем с детской кожей и показываем малышу любовь через прикосновения!
 
-section.content(data-magellan-target="care")
+section#care.content(data-magellan-target="care")
     .content_part.content_part--left.content_part--blue(data-sticky-container)
         .content_block(data-sticky data-anchor="care" data-margin-top="6.2")
             h2.content_block_header
                 | Косметический уход за кожей, особенности типа кожи
             .content_block_descr
                 | Каждому типу кожи  — свои секреты ухода! Определи свой тип кожи, начни особенный уход и наблюдай за тем, как твоя естественная красота будет заметна все ярче с каждым днем.  
-    #care.content_part.content_part--care.content_part--right.content_part--green
+    .content_part.content_part--care.content_part--right.content_part--green
         .content_block
             .owl-carousel.content_slider
-                .owl-item
+                .content_item_outer
                     +item('oily_skin', 'Жирная кожа', 'Регулярное очищение — залог успеха! Для очистки выбирай моющие кремы или косметическое мыло')
                     +item('combined_skin', 'Комбинированная кожа', 'Выбирай густые крема и наноси их обильнее на сухие участки кожи.')
-                .owl-item
+                .content_item_outer
                     +item('dry_skin', 'Сухая кожа', 'После душа используй питательные крема с жирной основой.')
                     +item('normal_skin', 'Нормальная кожа', 'Все усилия следует направить на то, чтобы сохранить кожу в  этом состоянии как можно дольше. Главное не пересушить!')
-                .owl-item
+                .content_item_outer
                     +item('sensitive_skin', 'Чувствительная кожа', 'Используй крема с ультрафиолетовой защитой и щадящим составом. Постарайся использовать одну и ту же марку.')
 
-section.content(data-magellan-target="burn")
-    #burn.content_part.content_part--burn.content_part--left.content_part--green
+section#burn.content(data-magellan-target="burn")
+    .content_part.content_part--burn.content_part--left.content_part--green
         .content_block
             .owl-carousel.content_slider
-                .owl-item
+                .content_item_outer
                     +item('thermal_burn', 'Термические ожоги', ['Ожог пламенем во время готовки на газовой плите или при непосредственном взаимодействии с огнем', 'Ожог горячими жидкосттями: от кипятка до масла для жарки', 'Ожоги горячими предметами', 'Ожог паром'])
                     +item('chemical_burn', 'Химические ожоги', ['Ожог уксусом', 'Ожог моющими и дезинфицирующими средствами для раковин', 'Ожог отбеливателем для белья'])
-                .owl-item
+                .content_item_outer
                     +item('sunburn', 'Солнечные ожоги', 'Ожог ультрафиолетовыми лучами при долгом нахождении на солнце')
     .content_part.content_part--right.content_part--blue(data-sticky-container)
         .content_block.sticky(data-sticky data-anchor="burn" data-margin-top="6.2")
@@ -67,31 +67,31 @@ section.content(data-magellan-target="burn")
                 br
                 | Д-Пантенол в виде крема. А если ты собираешься в путешествие в жаркие страны — не забудь добавить Д-Пантенол мазь для бережного ухода за кожей после загара в аптечку!
             
-section.content(data-magellan-target="tattoo")
+section#tattoo.content(data-magellan-target="tattoo")
     .content_part.content_part--left.content_part--blue(data-sticky-container)
         .content_block(data-sticky data-anchor="tattoo" data-margin-top="6.2")
             h2.content_block_header
                 | Уход за татуировками
             .content_block_descr
                 | Для идеального изображения необходимо как минимум пару недель для заживления тату. И от того, насколько правильно будет осуществлён уход за тату, зависит конечный результат. Используй Д-Пантенол в виде крема или мази во время первого и постоянного ухода за татуировкой, чтобы ускорить заживление и успокоить кожу!
-    #tattoo.content_part.content_part--tattoo.content_part--right.content_part--green
+    .content_part.content_part--tattoo.content_part--right.content_part--green
         .content_block
             .owl-carousel.content_slider
-                .owl-item
+                .content_item_outer
                     +item('first_hours', 'Первые 24-48 часов', ['Тщательно промой татуировку от сукровицы. Мыть можно только с помощью ладошек — никаких губок и щеток!', 'Ватным тампоном протри изображение по направлению от центра к краю. Оставь для высыхания. ', 'После того, как татуировка высохла, нанеси на нее мазь для ухода за татуировкой. В этом случае отлично подойдет Д-Пантенол в виде крема или геля.', 'После нанесения мази желательно закрыть татуировку пеленкой для заживления тату. Повторяй процедуру в течение трех дней.'])
-                .owl-item
+                .content_item_outer
                     +item('first_weeks', 'Первые 2-3 недели', ['Ежедневно мой тату. В течение минимум первых 14 дней тату надо мыть теплой водой с мылом, причем дважды в день.', 'Наноси крем или мазь несколько раз в день. Это нужно для того, чтобы кожа была увлажненной и не зудела. Наносить лосьон или мазь надо 4-6 раз в день.', 'Не мочи тату. Долгое принятие ванны или душа придется отложить на несколько недель, а о плавании и вовсе придется забыть — на этот же срок.'])
-                .owl-item
+                .content_item_outer
                     +item('long_term', 'Долгосрочный уход за татуировкой', ['Ежедневно наноси на тату солнцезащитный крем. Соответственно, начиная со второго месяца жизни с тату, надо наносить на нее солнцезащитный крем всякий раз перед выходом из дома.', 'Следи, чтобы тату не была в поту. Особенно это важно, если твоя работа связана с физическими усилиями.', 'По необходимости наноси на кожу лосьоны и крема. Увлажнять кожу по-прежнему важно, причем ежедневно.'])
 
-section.content(data-magellan-target="leisure")
-    #leisure.content_part.content_part--leisure.content_part--left.content_part--green
+section#leisure.content(data-magellan-target="leisure")
+    .content_part.content_part--leisure.content_part--left.content_part--green
         .content_block
             .owl-carousel.content_slider
-                .owl-item
+                .content_item_outer
                     +item('swimming', 'Плавание', 'Постоянная смена температуры, от холодной в воде, до прогретой на улице и в раздевалках. Резкий температурный перепад —  причина «мраморной» кожи')
                     +item('cycling', 'Катание на велосипеде', ' При активном виде спорта, когда в лицо бьют порывы ветра, кожа становится сухой и обветренной, может трескаться.')
-                .owl-item
+                .content_item_outer
                     +item('walking', 'Прогулки и спорт на свежем воздухе', 'Если летний день выдался солнечным — берегись ультрафиолетовых лучей! Травмировать кожу солнечным ожогом летом особенно легко.')
     .content_part.content_part--right.content_part--blue(data-sticky-container)
         .content_block.sticky(data-sticky data-anchor="leisure" data-margin-top="6.2")
