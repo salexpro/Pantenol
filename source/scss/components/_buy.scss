@@ -1,0 +1,91 @@
+.buy{
+    padding: 140px 0 130px;
+    text-align: center;
+    @include breakpoint(medium down) {
+        padding: 100px 0;
+    }
+    @include breakpoint(small down) {
+        padding: 50px 0;
+    }
+    &_inner{
+        align-items: flex-end;
+        justify-content: space-between;
+        margin-bottom: 100px;
+        @include breakpoint(medium down) {
+            justify-content: center;
+            margin-bottom: 50px;
+        }   
+        .shrink{
+            position: relative;
+        }
+    }
+    &_kv{
+        height: 170px;
+        position: relative;
+        @include breakpoint(medium down) {
+            height: auto;
+            display: flex;
+            justify-content: center;
+            align-items: baseline;
+        }
+        img{
+            position: absolute;
+            top: 0;
+            left: -8%;
+            width: 144%;
+            max-width: 770px;
+            @include breakpoint(medium down) {
+                max-width: 770px;
+                position: static;
+                transform: translateX(2%);
+            }
+            @include breakpoint(800 down) {
+                // max-width: 100%;
+            }
+        }
+    }
+    &_action{
+        position: relative;
+        max-width: 400px;
+        background-color: $warning-color;
+        border-radius: 13px;
+        text-align: left;
+        font-size: 20px;
+        padding: 34px 20px 34px 45%;
+        @include breakpoint(small down) {
+            font-size: 18px;
+        }
+        &::before{
+            content: '';
+            position: absolute;
+            top: 9px;
+            left: -40px;
+            width: 232px;
+            height: 402px;
+            background-image: url(../img/pomade.png);
+            background-repeat: no-repeat;
+            @include breakpoint(small down) {
+                background-size: contain;
+                width: 50%;
+                left: 0;
+            }
+        }
+        &_header{
+            margin-bottom: 0.32em;
+            font-size: 41px;
+            @include breakpoint(small down) {
+                font-size: 25px;
+            }
+        }
+    }
+    &_terms {
+        position: absolute;
+        left: 50%;
+        top: calc(100% + 124px);
+        transform: translateX(-50%);
+        font-size: 14px;
+        font-weight: 400;
+        text-decoration: underline;
+        color: $black;
+    }
+}

@@ -2,8 +2,8 @@
 
 $contrast-warnings: false;
 @import 'settings';
-@import '../../node_modules/foundation-sites/scss/foundation';
-// @import 'motion-ui';
+@import 'foundation';
+@import 'motion-ui';
 
 @include foundation-global-styles;
 //@include foundation-grid;
@@ -62,6 +62,7 @@ $contrast-warnings: false;
 @import 'components/nav';
 @import 'components/slider';
 @import 'components/content';
+@import 'components/buy';
 @import 'components/video';
 @import 'components/map';
 @import 'components/footer';

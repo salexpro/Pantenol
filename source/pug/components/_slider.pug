@@ -5,8 +5,8 @@ section.slider
         h1.slider_header
             | Д-Пантенол
         .slider_slogan
-            | Эксперт в заживлении кожи
-    .orbit(data-orbit data-use-m-u-i="false")
+            | Эксперт в заживлении поврежденной кожи
+    .orbit(data-orbit data-options="animInFromLeft:fade-in; animInFromRight:fade-in; animOutToLeft:fade-out; animOutToRight:fade-out;")
         .orbit-wrapper
             ul.orbit-container
                 li.orbit-slide.is-active.orbit-slide--family
@@ -38,5 +38,5 @@ section.slider
             button(data-slide='2')
             button(data-slide='3')
             button(data-slide='4')
-    .slider_kv
+    //- .slider_kv
         img(src='./img/kv.png', alt='Д-Пантенол')

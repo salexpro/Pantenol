@@ -9,7 +9,7 @@
         // top: 0;
         // left: 0;
         width: 480px;
-        height: 480px;
+        height: 420px;
         display: flex;
         flex-direction: column;
         align-items: flex-start;
@@ -29,13 +29,19 @@
             margin-bottom: 20px;
         }
     }
+    &_list.menu{
+        display: block;
+    }
     &_item{
-        width: 140px;
+        width: 130px;
         a{
             padding: 0;
         }
         + .map_item{
             margin-top: 32px;
+        }
+        img{
+            // width: 100%;
         }
     }
     &_container{

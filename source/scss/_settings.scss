@@ -72,7 +72,7 @@ $foundation-palette: (
   primary: #0485b7,
   secondary: #6dc749,
   success: #000,
-  warning: #ff5f12,
+  warning: #ff6012,
   alert: #cc4b37,
 );
 $light-gray: #e6e6e6;
@@ -286,26 +286,26 @@ $breadcrumbs-item-separator-color: $medium-gray;
 // ----------
 
 $button-font-family: inherit;
-$button-padding: 0.95em 1.7em;
+$button-padding: 0.5em 1.55em;
 $button-margin: 0;
 $button-fill: solid;
-$button-background: $white;
+$button-background: $primary-color;
 $button-background-hover: $white;
 $button-color: $primary-color;
-$button-color-alt: $white;
-$button-radius: 25px;
-$button-hollow-border-width: 1px;
+$button-color-alt: $primary-color;
+$button-radius: 0;
+$button-hollow-border-width: 2px;
 $button-sizes: (
   tiny: 0.6rem,
   small: 0.75rem,
-  default: 21px,
+  default: 28px,
   large: 1.25rem,
 );
 $button-palette: $foundation-palette;
 $button-opacity-disabled: 0.25;
 $button-background-hover-lightness: 0;
-$button-hollow-hover-lightness: -50%;
-$button-transition: background-color 0.25s ease-out, opacity 0.25s ease-out;
+$button-hollow-hover-lightness: -20%;
+$button-transition: 0.25s ease-out;
 
 // 12. Button Group
 // ----------------
