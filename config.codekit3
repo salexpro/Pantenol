@@ -826,7 +826,7 @@
 		},
 	"\/source\/img\/map\/apteka.png": {
 		"ft": 32768,
-		"iS": 2799,
+		"iS": 24754,
 		"oA": 0,
 		"oAP": "\/build\/img\/map\/apteka.png",
 		"oF": 0,
@@ -847,7 +847,7 @@
 		},
 	"\/source\/img\/map\/piluli.png": {
 		"ft": 32768,
-		"iS": 2185,
+		"iS": 21524,
 		"oA": 0,
 		"oAP": "\/build\/img\/map\/piluli.png",
 		"oF": 0,
@@ -855,6 +855,16 @@
 		"opt": 1,
 		"oT": 1,
 		"q": 100
+		},
+	"\/source\/img\/menu\/action.svg": {
+		"ft": 2097152,
+		"miP": 1,
+		"oA": 0,
+		"oAP": "\/build\/img\/menu\/action.svg",
+		"oF": 0,
+		"opt": 1,
+		"plM": 1653025529855,
+		"prP": 1
 		},
 	"\/source\/img\/menu\/burn.png": {
 		"ft": 32768,
@@ -1319,7 +1329,7 @@
 	"displayValueWasSetByUser": 1,
 	"iconImageName": "\/source\/apple-touch-icon.png",
 	"iconImageWasSetByUser": 0,
-	"lastBuiltDate": 546797376
+	"lastBuiltDate": 547739972
 	},
 "projectSettings": {
 	"abortBuildOnError": 1,
